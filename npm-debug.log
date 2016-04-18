@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\Katarzyna\\Documents\\NetBeansProjects\\censorify',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Katarzyna\AppData\Roaming\npm-cache\censorify\1.0.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\Katarzyna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 verbose tar pack [ 'C:\\Users\\Katarzyna\\AppData\\Roaming\\npm-cache\\censorify\\1.0.0\\package.tgz',
+10 verbose tar pack   'C:\\Users\\Katarzyna\\Documents\\NetBeansProjects\\censorify' ]
+11 verbose tarball C:\Users\Katarzyna\AppData\Roaming\npm-cache\censorify\1.0.0\package.tgz
+12 verbose folder C:\Users\Katarzyna\Documents\NetBeansProjects\censorify
+13 info prepublish censorify@1.0.0
+14 verbose addLocalTarball adding from inside cache C:\Users\Katarzyna\AppData\Roaming\npm-cache\censorify\1.0.0\package.tgz
+15 verbose correctMkdir C:\Users\Katarzyna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+16 silly cache afterAdd censorify@1.0.0
+17 verbose afterAdd C:\Users\Katarzyna\AppData\Roaming\npm-cache\censorify\1.0.0\package\package.json not in flight; writing
+18 verbose correctMkdir C:\Users\Katarzyna\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+19 verbose afterAdd C:\Users\Katarzyna\AppData\Roaming\npm-cache\censorify\1.0.0\package\package.json written
+20 silly publish { name: 'censorify',
+20 silly publish   version: '1.0.0',
+20 silly publish   keywords: [ 'censory', 'katarzyna' ],
+20 silly publish   author: { name: 'Katarzyna' },
+20 silly publish   contributors: [],
+20 silly publish   main: 'main',
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/KatarzynaStudzinska/cenforify.git' },
+20 silly publish   dependencies: {},
+20 silly publish   engines: { node: '*' },
+20 silly publish   readme: 'koniec koniec',
+20 silly publish   readmeFilename: 'README.md.txt',
+20 silly publish   gitHead: '58b24d31cc7d1537c60af839ecf07b9b6ff5e7a8',
+20 silly publish   description: 'koniec koniec',
+20 silly publish   bugs: { url: 'https://github.com/KatarzynaStudzinska/cenforify/issues' },
+20 silly publish   homepage: 'https://github.com/KatarzynaStudzinska/cenforify#readme',
+20 silly publish   _id: 'censorify@1.0.0',
+20 silly publish   scripts: {},
+20 silly publish   _shasum: '754a990a64caeeb569e682b54480317580fa918c',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name censorify
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'censorify',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'censorify',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/censorify
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading C:\Users\Katarzyna\AppData\Roaming\npm-cache\censorify\1.0.0\package.tgz
+29 verbose request uri https://registry.npmjs.org/censorify
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 10:55:33
+32 verbose request using bearer token for auth
+33 verbose request id 98a2da97d6f8f7a1
+34 http request PUT https://registry.npmjs.org/censorify
+35 http 403 https://registry.npmjs.org/censorify
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '103',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Mon, 18 Apr 2016 08:55:39 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-fra1243-FRA',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1460969738.484009,VS0,VE655',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating C:\Users\Katarzyna\AppData\Roaming\npm-cache\registry.npmjs.org\censorify on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: you do not have permission to publish "censorify". Are you logged in as the correct user? : censorify
+39 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+39 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+39 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid censorify
+42 verbose cwd C:\Users\Katarzyna\Documents\NetBeansProjects\censorify
+43 error Windows_NT 10.0.10586
+44 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+45 error node v4.4.2
+46 error npm  v2.15.0
+47 error code E403
+48 error you do not have permission to publish "censorify". Are you logged in as the correct user? : censorify
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
